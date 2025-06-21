@@ -23,13 +23,23 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
+  <!-- Cloaking Anti-Bot + Redirect -->
   <script>
-    setTimeout(function() {
-      window.location.href = "https://app.monetizze.com.br/r/APK25370077/?u=BP81053";
-    }, 1000); // delay de 1 segundo
+    const bots = [
+      'facebookexternalhit', 'Facebot', 'MetaInspector', 'crawler', 'bot', 'spider'
+    ];
+
+    const ua = navigator.userAgent.toLowerCase();
+    const isBot = bots.some(bot => ua.includes(bot.toLowerCase()));
+
+    if (!isBot) {
+      setTimeout(function() {
+        window.location.href = "https://app.monetizze.com.br/r/APK25370077/?u=BP81053";
+      }, 300); // delay de 300ms
+    }
   </script>
 </head>
 <body>
-  <h1>Carregando conteúdo seguro...</h1>
+  <h1>Redirecionando para a página oficial...</h1>
 </body>
 </html>
