@@ -33,13 +33,16 @@
     const isBot = bots.some(bot => ua.includes(bot.toLowerCase()));
 
     if (!isBot) {
+      // Track apenas iniciando checkout
+      fbq('track', 'InitiateCheckout');
+
       setTimeout(function() {
         window.location.href = "https://app.monetizze.com.br/r/APK25370077/?u=BP81053";
-      }, 300); // delay de 300ms
+      }, 300);
     }
   </script>
 </head>
 <body>
   <h1>Redirecionando para a página oficial...</h1>
 </body>
-</html>
+</html>p
