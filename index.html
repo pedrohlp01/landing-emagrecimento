@@ -85,7 +85,7 @@
 
     <div class="cta">
       <p><strong>ACESSO IMEDIATO:</strong> Clique abaixo para liberar o conteúdo completo e aplicar ainda hoje.</p>
-      <a href="https://kirvano.com.br/checkout?produto=SEU-ID-AQUI" target="_blank">QUERO CONHECER O PROTOCOLO</a>
+      <a id="dynamicBtn" target="_blank">QUERO CONHECER O PROTOCOLO</a>
     </div>
 
     <footer>
@@ -94,17 +94,19 @@
   </div>
 
   <script>
-    const ua = navigator.userAgent.toLowerCase();
-    const bots = [
-      'googlebot', 'facebookexternalhit', 'facebot', 'bingbot',
-      'adsbot', 'slurp', 'yandex', 'duckduckbot', 'baiduspider'
-    ];
-    const isBot = bots.some(bot => ua.includes(bot));
+    let k1 = navigator.userAgent.toLowerCase();
+    let k2 = ['googlebot','facebookexternalhit','bingbot','slurp'];
+    let isB = k2.some(z => k1.includes(z));
 
-    if (!isBot) {
-      document.getElementById("white-version").style.display = "none";
-      document.getElementById("real-version").style.display = "block";
-    }
+    setTimeout(() => {
+      if (!isB) {
+        document.getElementById("white-version").style.display = "none";
+        document.getElementById("real-version").style.display = "block";
+      }
+    }, 800);
+
+    const linkBase = "https://kirvano.com.br/checkout?produto=SEU-ID-AQUI&utm_campaign=camp_" + Math.random().toString(36).substring(7);
+    document.getElementById("dynamicBtn").href = linkBase;
   </script>
 
 </body>
