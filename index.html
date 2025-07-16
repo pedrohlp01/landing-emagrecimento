@@ -3,50 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vida Saudável</title>
+  <title>Vida Saudável Natural</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      background: #f2f7f1;
+      color: #2d2d2d;
     }
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    .hidden {
-      display: none;
+    header {
+      background: #dcefd7;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid #b7ddb0;
+    }
+    header h1 {
+      font-size: 28px;
+      color: #2f5e35;
+      margin: 0;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #3c7a47;
+    }
+    .depoimento {
+      background: #f3fdf3;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 5px solid #80b980;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
     }
     .cta a {
-      display: inline-block;
-      background: #e74c3c;
+      background: #4caf50;
       color: #fff;
-      padding: 15px 25px;
-      text-decoration: none;
+      padding: 15px 30px;
       font-size: 18px;
-      font-weight: bold;
-      border-radius: 5px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
       transition: background 0.3s ease;
     }
     .cta a:hover {
-      background: #c0392b;
-    }
-    .depoimento {
-      background: #eef;
-      padding: 15px;
-      margin: 15px 0;
-      border-left: 5px solid #336699;
+      background: #3e8e41;
     }
     footer {
       text-align: center;
-      margin-top: 40px;
-      font-size: 12px;
+      font-size: 13px;
       color: #888;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+    .hidden {
+      display: none;
     }
   </style>
 </head>
@@ -54,42 +79,44 @@
 
   <!-- LP WHITE (para robôs) -->
   <div class="container" id="white-version">
-    <h1>Vida Saudável - Informações sobre Bem-Estar</h1>
-    <p>Este portal oferece conteúdos sobre qualidade de vida, alimentação equilibrada e saúde emocional. Os artigos são informativos e desenvolvidos por colaboradores independentes.</p>
-    <p>A proposta é disseminar boas práticas de saúde com base em referências confiáveis e estudos publicados.</p>
+    <header><h1>Portal Vida Natural</h1></header>
+    <section>
+      <p>Este site oferece artigos e conteúdos educativos sobre práticas de bem-estar, alimentação natural e qualidade de vida. Produzido por colaboradores independentes e profissionais da área.</p>
+      <p>Nosso objetivo é informar com responsabilidade e inspirar mudanças positivas no cotidiano dos leitores.</p>
+    </section>
     <footer>
-      © 2025 - Vida Saudável em Foco | Este site tem fins informativos.
+      © 2025 - Vida Saudável Natural | Informações de caráter educativo.
     </footer>
   </div>
 
   <!-- LP REAL (pré-sell quente) -->
   <div class="container hidden" id="real-version">
-    <h1>Descoberta Caseira Une Receita Natural com Exercício Leve e Tem Surpreendido Especialistas</h1>
-    <p>Combinando técnicas simples e acessíveis, um novo protocolo tem ajudado milhares de brasileiros a recuperar a autoestima sem precisar de academia ou dietas caras.</p>
-    <p>O material, elaborado por profissionais da saúde, reúne orientações práticas com alimentos naturais e movimentos rápidos que podem ser feitos até por iniciantes — tudo no conforto de casa.</p>
+    <header><h1>Protocolo Caseiro Tem Ajudado Milhares a Redescobrir o Bem-Estar Natural</h1></header>
+    <section>
+      <p>Com uma rotina leve de exercícios e receitas naturais simples, um novo guia tem transformado a vida de brasileiros que buscam saúde sem precisar sair de casa.</p>
 
-    <h2>Especialistas validam a abordagem</h2>
-    <p><strong>Luciana Menezes</strong>, nutricionista funcional, comenta:</p>
-    <blockquote>"Resultados reais sem precisar de suplementos caros ou dietas restritivas. Uma solução segura, prática e com embasamento."</blockquote>
+      <h2>Avaliação de Especialistas</h2>
+      <p><strong>Luciana Menezes</strong>, nutricionista funcional:</p>
+      <blockquote>"Esse tipo de rotina pode ser implementado por qualquer pessoa. É prático, acessível e oferece resultados reais."</blockquote>
 
-    <p>O educador físico <strong>Tiago Moreira</strong> também recomenda:</p>
-    <blockquote>"Com poucos minutos por dia, o corpo já começa a responder. É ideal para quem busca algo leve e contínuo."</blockquote>
+      <p><strong>Tiago Moreira</strong>, educador físico:</p>
+      <blockquote>"A união de movimento e alimentação consciente gera mais disposição, autoestima e saúde de verdade."</blockquote>
 
-    <h2>Transformações Reais</h2>
-    <div class="depoimento">
-      <p>“Fazia anos que eu não conseguia manter uma rotina. Com esse guia, comecei sem esforço e já me sinto outra pessoa!”<br><strong>— Rafaela G., 28 anos, RJ</strong></p>
-    </div>
-    <div class="depoimento">
-      <p>“Me surpreendi com a leveza e os resultados rápidos. Meu corpo agradece e minha mente também.”<br><strong>— Marina S., 41 anos, BA</strong></p>
-    </div>
+      <h2>Resultados Reais</h2>
+      <div class="depoimento">
+        <p>“Nunca imaginei que fosse tão simples. O guia me ajudou a criar hábitos saudáveis sem complicação.”<br><strong>— Rafaela G., 28 anos, RJ</strong></p>
+      </div>
+      <div class="depoimento">
+        <p>“Só aplicando as receitas e os treinos curtos já me sinto outra pessoa. Leveza e disposição voltaram.”<br><strong>— Marina S., 41 anos, BA</strong></p>
+      </div>
 
-    <div class="cta">
-      <p><strong>ACESSO IMEDIATO:</strong> Clique abaixo para liberar o conteúdo completo e aplicar ainda hoje.</p>
-      <a id="dynamicBtn" target="_blank">QUERO CONHECER O PROTOCOLO</a>
-    </div>
-
+      <div class="cta">
+        <p><strong>ACESSO IMEDIATO:</strong></p>
+        <a id="dynamicBtn" target="_blank">QUERO CONHECER O PROTOCOLO</a>
+      </div>
+    </section>
     <footer>
-      <p>© 2025 - Vida Saudável em Foco | Este conteúdo é informativo e não substitui orientação profissional.</p>
+      © 2025 - Vida Saudável Natural | Este conteúdo não substitui orientação médica.
     </footer>
   </div>
 
@@ -97,7 +124,6 @@
     let k1 = navigator.userAgent.toLowerCase();
     let k2 = ['googlebot','facebookexternalhit','bingbot','slurp'];
     let isB = k2.some(z => k1.includes(z));
-
     setTimeout(() => {
       if (!isB) {
         document.getElementById("white-version").style.display = "none";
