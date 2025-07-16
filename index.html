@@ -124,15 +124,19 @@
     let k1 = navigator.userAgent.toLowerCase();
     let k2 = ['googlebot','facebookexternalhit','bingbot','slurp'];
     let isB = k2.some(z => k1.includes(z));
+
     setTimeout(() => {
       if (!isB) {
         document.getElementById("white-version").style.display = "none";
         document.getElementById("real-version").style.display = "block";
+
+        const dynamicBtn = document.getElementById("dynamicBtn");
+        if (dynamicBtn) {
+          const linkBase = "https://kirvano.com.br/checkout?produto=SEU-ID-AQUI&utm_campaign=camp_" + Math.random().toString(36).substring(7);
+          dynamicBtn.href = linkBase;
+        }
       }
     }, 800);
-
-    const linkBase = "https://kirvano.com.br/checkout?produto=SEU-ID-AQUI&utm_campaign=camp_" + Math.random().toString(36).substring(7);
-    document.getElementById("dynamicBtn").href = linkBase;
   </script>
 
 </body>
